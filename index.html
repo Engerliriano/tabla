@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabla de colores</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!--CDN Grafico-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    #tc input {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body onload="dibujartabla()">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col m6 s12">
+        <table class="responsive-table" id="tc"></table>
+
+        <div class="row">
+          <div class="col s4">Rojos: <span id="sp_rojo">#</span></div>
+          <div class="col s4">Verdes: <span id="sp_verde">#</span></div>
+          <div class="col s4">Azul: <span id="sp_azul">#</span></div>
+        </div>
+      </div>
+      <div class="col m6 s12">
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js">
+  </script>
+
+  <script src="tabla.js">
+
+  </script>
+</body>
+
+</html>
